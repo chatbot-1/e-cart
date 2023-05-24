@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: red; */
+  padding: 20px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.356);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  z-index: 9999;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  column-gap: 4rem;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("../src/assets/back.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+img {
+  height: 80px;
+}
+.card {
+  background: rgba(255, 255, 255, 0.274);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.pro-btn {
+  border: none;
+  outline: none;
+  background: #764abc;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  /* margin-top: 20px; */
+}
+.card-data {
+  margin-top: 20px;
+}
+
+.pro-btn:hover {
+  background: #513282;
+}
+
+.home-head {
+  padding: 115px 0 20px 0;
+  color: white;
+}
+.home-title{
+  color: white;
+  margin-bottom: 1.5rem;
+}
+.nav-cart {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 40px;
+}
+.nav-logo{
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.nav-items {
+  text-decoration: none;
+  color: black;
+  margin-left: 20px;
+  /* font-weight: bold; */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cart-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.384);
+  align-items: center;
+  backdrop-filter: blur(10px);
+  margin-top: 3rem;
+  margin-bottom: 20px;
+  padding: 14px;
+  border-radius: 5px;
+}
